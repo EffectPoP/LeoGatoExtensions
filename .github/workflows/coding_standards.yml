@@ -1,0 +1,64 @@
+name: PHP coding standards
+on:
+    push:
+        branches:
+            - main
+    pull_request: null
+env:
+    CHECKOUT_SUBMODULES: "recursive"
+    
+jobs:
+    provide_data:
+        name: Provide list of package paths
+        runs-on: ubuntu-latest
+        steps:
+            -
+                uses: actions/checkout@v3
+                with:
+                    submodules: ${{ env.CHECKOUT_SUBMODULES }}
+
+            -   uses: shivammathur/setup-php@v2
+                with:
+                    php-version: 8.1
+                    coverage: none
+                env:
+                    COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            -   uses: "ramsey/composer-install@v2"
+
+            -   id: output_data
+                run: |
+                    echo "package_code_paths=$(vendor/bin/monorepo-builder source-packages --config=config/monorepo-builder/monorepo-builder-without-upstream-packages.php --psr4-only --subfolder=src --subfolder=tests)" >> $GITHUB_OUTPUT
+                    echo "wp_package_code_paths=$(vendor/bin/monorepo-builder source-packages --config=config/monorepo-builder/monorepo-builder-without-upstream-packages.php --psr4-only --wp-only --subfolder=src --subfolder=tests)" >> $GITHUB_OUTPUT
+
+        outputs:
+            package_code_paths: ${{ steps.output_data.outputs.package_code_paths }}
+            wp_package_code_paths: ${{ steps.output_data.outputs.wp_package_code_paths }}
+
+    main:
+        needs: provide_data
+        name: Execute PHP Code Sniffer
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout code
+                uses: actions/checkout@v3
+                with:
+                    submodules: ${{ env.CHECKOUT_SUBMODULES }}
+
+            -   name: Set-up PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: 8.1
+                    coverage: none
+                env:
+                    COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            -   name: Install Composer dependencies
+                uses: "ramsey/composer-install@v2"
+
+            -   name: Run PHP Code Sniffer
+                run: vendor/bin/phpcs -n src ${{ needs.provide_data.outputs.package_code_paths }}
+
+            -   name: Run PHP Code Sniffer for WordPress packages
+                run: vendor/bin/phpcs --standard=submodules/GatoGraphQL/phpcs/WordPress-Custom/ruleset.xml -n src ${{ needs.provide_data.outputs.wp_package_code_paths }}
+
