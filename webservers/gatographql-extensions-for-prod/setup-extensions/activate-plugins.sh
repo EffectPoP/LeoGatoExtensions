@@ -36,3 +36,10 @@ else
     echo "Please download the latest PROD version of the 'Gato GraphQL - Hello Dolly' plugin from your GitHub repo, and install it on this WordPress site"
 fi
 
+
+# Activate own plugins
+if wp plugin is-installed gatographql-again-nathan-bro; then
+    wp plugin activate gatographql-again-nathan-bro
+else
+    echo "Please download the latest PROD version of the 'Gato GraphQL - Again Nathan Bro' plugin from your GitHub repo, and install it on this WordPress site"
+fi

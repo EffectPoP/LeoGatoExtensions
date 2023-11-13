@@ -4,6 +4,8 @@ parameters:
 includes:
     - phpstan.neon.dist
     - vendor/szepeviktor/phpstan-wordpress/extension.neon
+    - layers/GatoGraphQLForWP/plugins/again-nathan-bro/phpstan.neon.dist
+    - layers/GatoGraphQLForWP/packages/again-nathan-bro-schema/phpstan.neon.dist
     - layers/GatoGraphQLForWP/plugins/hello-dolly/phpstan.neon.dist
     - layers/GatoGraphQLForWP/packages/hello-dolly-schema/phpstan.neon.dist
     - layers/GatoGraphQLForWP/plugins/nathan-bro/phpstan.neon.dist

@@ -9,3 +9,6 @@ fi
 # Activate own plugins
 wp plugin activate gatographql-hello-dolly
 
+
+# Activate own plugins
+wp plugin activate gatographql-again-nathan-bro

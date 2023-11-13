@@ -57,6 +57,8 @@
     },
     "autoload": {
         "psr-4": {
+            "CapongaMaronga55\\AgainNathanBroSchema\\": "layers/GatoGraphQLForWP/packages/again-nathan-bro-schema/src",
+            "CapongaMaronga55\\AgainNathanBro\\": "layers/GatoGraphQLForWP/plugins/again-nathan-bro/src",
             "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/src",
             "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/src",
             "CapongaMaronga55\\NathanBroSchema\\": "layers/GatoGraphQLForWP/packages/nathan-bro-schema/src",
@@ -197,6 +199,8 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "CapongaMaronga55\\AgainNathanBroSchema\\": "layers/GatoGraphQLForWP/packages/again-nathan-bro-schema/tests",
+            "CapongaMaronga55\\AgainNathanBro\\": "layers/GatoGraphQLForWP/plugins/again-nathan-bro/tests",
             "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/tests",
             "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/tests",
             "CapongaMaronga55\\NathanBroSchema\\": "layers/GatoGraphQLForWP/packages/nathan-bro-schema/tests",
@@ -581,6 +585,8 @@
         "install-deps-build-js": "Install all dependencies from npm to build the JS packages, blocks and editor scripts for all plugins in the Caponga Maronga 55 - Gato GraphQL Extensions repo"
     },
     "replace": {
+        "caponga-maronga-55/again-nathan-bro": "self.version",
+        "caponga-maronga-55/again-nathan-bro-schema": "self.version",
         "caponga-maronga-55/hello-dolly": "self.version",
         "caponga-maronga-55/hello-dolly-schema": "self.version",
         "caponga-maronga-55/nathan-bro": "self.version",
