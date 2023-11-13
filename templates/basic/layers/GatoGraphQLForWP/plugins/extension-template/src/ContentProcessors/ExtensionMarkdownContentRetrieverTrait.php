@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\ExtensionTemplate\ContentProcessors;
+namespace CapongaMaronga55\ExtensionTemplate\ContentProcessors;
 
-use MyCompanyForGatoGraphQL\ExtensionTemplate\GatoGraphQLExtension;
+use CapongaMaronga55\ExtensionTemplate\GatoGraphQLExtension;
 use GatoGraphQL\GatoGraphQL\ContentProcessors\ExtensionMarkdownContentRetrieverTrait as UpstreamExtensionMarkdownContentRetrieverTrait;
 use GatoGraphQL\GatoGraphQL\PluginSkeleton\ExtensionInterface;
 

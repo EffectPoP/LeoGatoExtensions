@@ -1,10 +1,10 @@
 <p align="center"><img src="https://raw.githubusercontent.com/GatoGraphQL/GatoGraphQL/master/assets/GatoGraphQL-logo.png"/></p>
 
-![Unit tests](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/unit_tests.yml/badge.svg)
-![Downgrade PHP tests](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/downgrade_php_tests.yml/badge.svg)
-![Scoping tests](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/scoping_tests.yml/badge.svg)
-![Generate plugins](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/generate_plugins.yml/badge.svg)
-![PHPStan](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/phpstan.yml/badge.svg)
+![Unit tests](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/unit_tests.yml/badge.svg)
+![Downgrade PHP tests](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/downgrade_php_tests.yml/badge.svg)
+![Scoping tests](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/scoping_tests.yml/badge.svg)
+![Generate plugins](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/generate_plugins.yml/badge.svg)
+![PHPStan](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/phpstan.yml/badge.svg)
 
 <!--
 @gatographql-project-info
@@ -15,10 +15,10 @@ Show a badge for the integration tests against InstaWP
 
 If these tests are enabled, add the badge code:
 
-![Integration tests](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/integration_tests.yml/badge.svg)
+![Integration tests](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/integration_tests.yml/badge.svg)
 -->
 
-# Gato GraphQL - Extension Starter
+# Caponga Maronga 55 - Gato GraphQL Extensions
 
 Gato GraphQL extensions add functionality and expand the GraphQL schema provided by [Gato GraphQL](https://github.com/GatoGraphQL/GatoGraphQL).
 
@@ -51,7 +51,7 @@ Follow these steps:
 ### Create your repo from this GitHub template
 
 - Click on `Use this template` → `Create a new repository`
-- Select the GitHub owner, and choose a proper name for your repository (eg: `my-account/GatoGraphQLExtensionsForMyCompany`)
+- Select the GitHub owner, and choose a proper name for your repository (eg: `EffectPoP/LeoGatoExtensions`)
 - Choose if to make it Public or Private
 - Click on `Create repository`
 
@@ -64,7 +64,7 @@ As a result, a copy of this template will have been created under your GitHub re
 Clone your repository in your local drive using the `--recursive` option (needed to clone Git submodule `GatoGraphQL/GatoGraphQL`):
 
 ```bash
-git clone --recursive https://github.com/my-account/GatoGraphQLExtensionsForMyCompany
+git clone --recursive https://github.com/EffectPoP/LeoGatoExtensions
 ```
 
 ### Install Composer dependencies
@@ -78,14 +78,14 @@ $ cd submodules/GatoGraphQL && composer install && cd ../.. && composer install
 
 ### Initialize the Project
 
-This step will replace all the generic strings in the extension starter (the PHP namespace `MyCompanyForGatoGraphQL`, company name `My Company`, and others) with the values corresponding to your project.
+This step will replace all the generic strings in the extension starter (the PHP namespace `CapongaMaronga55`, company name `Caponga Maronga 55`, and others) with the values corresponding to your project.
 
 Input your values in the command below and run:
 
 ```bash
 composer initialize-project -- \
   --php-namespace-owner=MyCompanyName \
-  --my-company-name="My Company Name" \
+  --my-company-name="Caponga Maronga 55 Name" \
   --my-company-email=email@mycompany.com \
   --my-company-website=https://www.mycompany.com
 ```
@@ -119,8 +119,8 @@ composer initialize-project -- --help
 | `--git-base-branch` | Base branch of the GitHub repository where this project is hosted. If not provided, this value is retrieved using `git` |
 | `--git-user-name` | Git user name, to "split" code and push it to a different repo when merging a PR. If not provided, this value is retrieved from the global `git` config |
 | `--git-user-email` | Git user email, to "split" code and push it to a different repo when merging a PR. If not provided, this value is retrieved from the global `git` config |
-| `--github-repo-owner` | Owner of the GitHub repository where this project is hosted (eg: "GatoGraphQL" in "https://github.com/GatoGraphQL/ExtensionStarter"). If not provided, this value is retrieved using `git` |
-| `--github-repo-name` | Name of the GitHub repository where this project is hosted (eg: "ExtensionStarter" in "https://github.com/GatoGraphQL/ExtensionStarter"). If not provided, this value is retrieved using `git` |
+| `--github-repo-owner` | Owner of the GitHub repository where this project is hosted (eg: "GatoGraphQL" in "https://github.com/EffectPoP/LeoGatoExtensions"). If not provided, this value is retrieved using `git` |
+| `--github-repo-name` | Name of the GitHub repository where this project is hosted (eg: "ExtensionStarter" in "https://github.com/EffectPoP/LeoGatoExtensions"). If not provided, this value is retrieved using `git` |
 | `--docs-git-base-branch` | Base branch of the (public) GitHub repository hosting the documentation for the extension, to access the images in PROD. If not provided, the value for option `git-base-branch` is used |
 | `--docs-github-repo-owner` | Owner of the (public) GitHub repository hosting the documentation for the extension, to access the images in PROD. If not provided, the value for option `github-repo-owner` is used |
 | `--docs-github-repo-name` | Name of the (public) GitHub repository hosting the documentation for the extension, to access the images in PROD. If not provided, the value for option `github-repo-name` is used |
@@ -186,9 +186,9 @@ Run (only the first time):
 composer build-server
 ```
 
-After a few minutes, the website will be available under `https://gatographql-{composer-vendor}-extensions.lndo.site`.
+After a few minutes, the website will be available under `https://gatographql-caponga-maronga-55-extensions.lndo.site`.
 
-(`{composer-vendor}` is an argument to the `initialize-project` command above; its default value is generated from the `php-namespace-owner` option.)
+(`caponga-maronga-55` is an argument to the `initialize-project` command above; its default value is generated from the `php-namespace-owner` option.)
 
 The URL is printed on the console under `APPSERVER URLS` (you will need to scroll up):
 
@@ -216,7 +216,7 @@ All plugins hosted on the "upstream" monorepo:
 
 All plugins hosted on this "downstream" starter monorepo:
 
-- [Gato GraphQL - Hello Dolly](https://github.com/GatoGraphQL/ExtensionStarter/blob/main/layers/GatoGraphQLForWP/plugins/hello-dolly/gatographql-hello-dolly.php)
+- [Gato GraphQL - Hello Dolly](https://github.com/EffectPoP/LeoGatoExtensions/blob/main/layers/GatoGraphQLForWP/plugins/hello-dolly/gatographql-hello-dolly.php)
 
 All the WordPress integration plugins, required by the extensions
 
@@ -228,7 +228,7 @@ Besides, some initial configuration is applied to the Gato GraphQL plugin Settin
 
 ### Log-in to the `wp-admin`
 
-Credentials for `https://gatographql-{composer-vendor}-extensions.lndo.site/wp-admin/`:
+Credentials for `https://gatographql-caponga-maronga-55-extensions.lndo.site/wp-admin/`:
 
 - Username: `admin`
 - Password: `admin`
@@ -426,7 +426,7 @@ Explain what each of them does! -->
 
 <!--
 
-_Doing this process manually is tedious and error-prone. We are already [working on a `create-extension` command](https://github.com/GatoGraphQL/ExtensionStarter/issues/73) to automate this process._
+_Doing this process manually is tedious and error-prone. We are already [working on a `create-extension` command](https://github.com/EffectPoP/LeoGatoExtensions/issues/73) to automate this process._
 
 ### Creating the extension manually
 
@@ -720,7 +720,7 @@ And regenerate the mapping for the Lando webserver for DEV, by running:
 composer rebuild-app-and-server
 ```
 
-Now, when loading the Lando webserver for DEV (under `https://gatographql-{composer-vendor}-extensions.lndo.site/wp-admin`), the new extension should be loaded and working (even though it doesn't contain any resolver yet). -->
+Now, when loading the Lando webserver for DEV (under `https://gatographql-caponga-maronga-55-extensions.lndo.site/wp-admin`), the new extension should be loaded and working (even though it doesn't contain any resolver yet). -->
 
 ## Extending the GraphQL Schema
 
@@ -734,7 +734,7 @@ In your code editor, copy the example file and paste it inside your extension fo
 
 You must also have those services injected into the service container, by defining them in file `schema-services.yaml`. Check [`submodules/GatoGraphQL/layers/CMSSchema/packages/users/config/schema-services.yaml`](https://github.com/GatoGraphQL/GatoGraphQL/blob/master/layers/CMSSchema/packages/users/config/schema-services.yaml) for an example.
 
-<!-- _In the future, we expect to have [commands to automatically generate the PHP code inside the extension](https://github.com/GatoGraphQL/ExtensionStarter/issues/74)._ -->
+<!-- _In the future, we expect to have [commands to automatically generate the PHP code inside the extension](https://github.com/EffectPoP/LeoGatoExtensions/issues/74)._ -->
 
 <!-- ### General to GraphQL -->
 
@@ -1059,13 +1059,13 @@ composer release-patch -- --dry-run
 
 After tagging the repo on the step above, we must create a release from the tag to generate the extension plugins for production.
 
-To create the release, head over to the `tags` page in your GitHub repo (`https://github.com/my-account/GatoGraphQLExtensionsForMyCompany/tags`), and click on the new tag (eg: `0.1.0`).
+To create the release, head over to the `tags` page in your GitHub repo (`https://github.com/EffectPoP/LeoGatoExtensions/tags`), and click on the new tag (eg: `0.1.0`).
 
 Then, on the tag page, click on `Create release from tag`, and then add a title and content, and submit the form.
 
 ![Create release from tag](assets/img/create-release-from-tag.png)
 
-This will trigger the [`generate_plugins.yml`](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/generate_plugins.yml) workflow, which will generate the extension plugins and attach them as assets to the tag page.
+This will trigger the [`generate_plugins.yml`](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/generate_plugins.yml) workflow, which will generate the extension plugins and attach them as assets to the tag page.
 
 For instance, after tagging Gato GraphQL with `1.0.9`, the tag page [GatoGraphQL/GatoGraphQL/releases/tag/1.0.9](https://github.com/GatoGraphQL/GatoGraphQL/releases/tag/1.0.9) had the following assets attached to it:
 
@@ -1077,11 +1077,11 @@ For instance, after tagging Gato GraphQL with `1.0.9`, the tag page [GatoGraphQL
 
 Once the extension plugin has been generated, install it on the PROD webserver to test it, whether manually or using WP-CLI.
 
-Using WP-CLI, if your repo is `my-account/GatoGraphQLExtensionsForMyCompany` and you have released version `0.1.0`, run:
+Using WP-CLI, if your repo is `EffectPoP/LeoGatoExtensions` and you have released version `0.1.0`, run:
 
 ```bash
 $ cd webservers/gatographql-extensions-for-prod
-$ lando wp plugin install https://github.com/my-account/GatoGraphQLExtensionsForMyCompany/releases/latest/download/gatographql-hello-dolly-0.1.0.zip --force --activate
+$ lando wp plugin install https://github.com/EffectPoP/LeoGatoExtensions/releases/latest/download/gatographql-hello-dolly-0.1.0.zip --force --activate
 $ cd ../..
 ```
 
@@ -1117,7 +1117,7 @@ Run (only the first time):
 composer build-server-prod
 ```
 
-After a few minutes, the website will be available under `https://gatographql-{composer-vendor}-extensions-for-prod.lndo.site`.
+After a few minutes, the website will be available under `https://gatographql-caponga-maronga-55-extensions-for-prod.lndo.site`.
 
 (The URL is the same one as for DEV above, plus appending `-for-prod` to the domain name.)
 
@@ -1340,8 +1340,8 @@ Activate XDebug for a request by appending parameter `?XDEBUG_TRIGGER=1` to the 
 
 For instance:
 
-- `https://gatographql-{composer-vendor}-extensions.lndo.site/wp-admin/edit.php?page=gatographql&action=execute_query&XDEBUG_TRIGGER=1`
-- `https://gatographql-{composer-vendor}-extensions.lndo.site/graphiql/?XDEBUG_TRIGGER=1`
+- `https://gatographql-caponga-maronga-55-extensions.lndo.site/wp-admin/edit.php?page=gatographql&action=execute_query&XDEBUG_TRIGGER=1`
+- `https://gatographql-caponga-maronga-55-extensions.lndo.site/graphiql/?XDEBUG_TRIGGER=1`
 
 ### Debugging PHPUnit tests
 
@@ -1357,9 +1357,9 @@ XDEBUG_TRIGGER=1 vendor/bin/phpunit submodules/GatoGraphQL/layers/GatoGraphQLFor
 
 ### Executing Integration Tests against InstaWP
 
-When a PR is merged, all extension plugins in the monorepo are generated for DEV, and attached to workflow [`generate_plugins.yml`](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/generate_plugins.yml) (in its Summary tab).
+When a PR is merged, all extension plugins in the monorepo are generated for DEV, and attached to workflow [`generate_plugins.yml`](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/generate_plugins.yml) (in its Summary tab).
 
-Then, workflow [`integration_tests.yml`](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/integration_tests.yml) is triggered. This workflow installs the generated plugins in an InstaWP instance, and executes the integration tests against this instance.
+Then, workflow [`integration_tests.yml`](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/integration_tests.yml) is triggered. This workflow installs the generated plugins in an InstaWP instance, and executes the integration tests against this instance.
 
 To use it, you need to:
 
@@ -1379,10 +1379,10 @@ Review the GitHub Actions workflows that you need for your project.
 
 Most likely, the following GitHub Actions workflows are not initially needed:
 
-- [`integration_tests.yml`](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/integration_tests.yml): You first need to have InstaWP and configure the template accordingly
-- [`scoping_tests.yml`](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/scoping_tests.yml): Initially there are no packages to scope in the starter
-- [`split_monorepo_tagged.yml`](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/split_monorepo_tagged.yml): The "Monorepo Split" is not enabled by default (see section [Monorepo Split](#monorepo-split) below)
-- [`split_monorepo.yml`](https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/split_monorepo.yml): Same as above
+- [`integration_tests.yml`](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/integration_tests.yml): You first need to have InstaWP and configure the template accordingly
+- [`scoping_tests.yml`](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/scoping_tests.yml): Initially there are no packages to scope in the starter
+- [`split_monorepo_tagged.yml`](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/split_monorepo_tagged.yml): The "Monorepo Split" is not enabled by default (see section [Monorepo Split](#monorepo-split) below)
+- [`split_monorepo.yml`](https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/split_monorepo.yml): Same as above
 
 If this is the case, you can [disable these workflows](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow) so they don't run unnecessarily.
 
@@ -1404,7 +1404,7 @@ composer copy-upstream-files
 
 <summary>What files does <code>copy-upstream-files</code> copy? 🤔</summary>
 
-Executing `composer copy-upstream-files` will copy files from the "upstream" `GatoGraphQL/GatoGraphQL` repo (which is a Git submodule), to the "downstream" `my-account/GatoGraphQLExtensionsForMyCompany` repo.
+Executing `composer copy-upstream-files` will copy files from the "upstream" `GatoGraphQL/GatoGraphQL` repo (which is a Git submodule), to the "downstream" `EffectPoP/LeoGatoExtensions` repo.
 
 These files include GitHub Actions workflows and Lando config files.
 
@@ -1433,7 +1433,7 @@ composer list
 | `activate-extension-plugins` | Download/activate the extension plugins, and any required integration plugin |
 | `activate-extension-plugins-prod` | Download/activate the extension plugins, and any required integration plugin, in the PROD server |
 | `analyse` | Run PHPStan static analysis of the code |
-| `build-js` | Build all JS packages, blocks and editor scripts for all plugins in the Gato GraphQL - Extension Starter repo |
+| `build-js` | Build all JS packages, blocks and editor scripts for all plugins in the Caponga Maronga 55 - Gato GraphQL Extensions repo |
 | `build-server` | Initialize the Lando webserver with the 'Gato GraphQL' demo site, for development. To be executed only the first time |
 | `build-server-prod` | Initialize the Lando webserver with the 'Gato GraphQL' demo site, for production. To be executed only the first time |
 | `check-style` | Validate PSR-12 coding standards (via phpcs) |
@@ -1459,7 +1459,7 @@ composer list
 | `init-server-prod` | Runs the init-server-prod script as defined in composer.json |
 | `init-server-upstream` | Runs the init-server-upstream script as defined in composer.json |
 | `initialize-project` | Initialize the project, replacing the extension starter data with your own data |
-| `install-deps-build-js` | Install all dependencies from npm to build the JS packages, blocks and editor scripts for all plugins in the Gato GraphQL - Extension Starter repo |
+| `install-deps-build-js` | Install all dependencies from npm to build the JS packages, blocks and editor scripts for all plugins in the Caponga Maronga 55 - Gato GraphQL Extensions repo |
 | `install-site` | Installs the WordPress site |
 | `install-site-prod` | Installs the WordPress site in the PROD server |
 | `integration-test` | Execute integration tests (PHPUnit) |
@@ -1564,7 +1564,7 @@ composer preview-code-downgrade
 
 ## Report issues
 
-Use the [issue tracker](https://github.com/GatoGraphQL/ExtensionStarter/issues) to report a bug or request a new feature for all packages in the monorepo.
+Use the [issue tracker](https://github.com/EffectPoP/LeoGatoExtensions/issues) to report a bug or request a new feature for all packages in the monorepo.
 
 ## Contributing
 
@@ -1572,4 +1572,4 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT
 
 ## Security
 
-If you discover any security related issues, please email name@mycompany.com instead of using the issue tracker.
+If you discover any security related issues, please email email@mycompany.com instead of using the issue tracker.

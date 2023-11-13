@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\HelloDolly\Container\CompilerPasses;
+namespace CapongaMaronga55\HelloDolly\Container\CompilerPasses;
 
 use GatoGraphQL\GatoGraphQL\Container\CompilerPasses\AbstractConfigureSchemaNamespacingCompilerPass;
 use PoP\Root\Module\ModuleInterface;
@@ -11,7 +11,7 @@ class ConfigureSchemaNamespacingCompilerPass extends AbstractConfigureSchemaName
 {
     protected function getSchemaNamespace(): string
     {
-        return 'MyCompanyForGatoGraphQL';
+        return 'CapongaMaronga55';
     }
 
     /**
@@ -20,7 +20,7 @@ class ConfigureSchemaNamespacingCompilerPass extends AbstractConfigureSchemaName
     protected function getModuleClasses(): array
     {
         return [
-            \MyCompanyForGatoGraphQL\HelloDollySchema\Module::class,
+            \CapongaMaronga55\HelloDollySchema\Module::class,
         ];
     }
 }

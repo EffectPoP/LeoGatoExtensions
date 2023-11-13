@@ -21,7 +21,7 @@ else
     # as artifact in the Release page), download it and install
     # it in this server, either manually or via WP-CLI:
     #
-    #   wp plugin install https://github.com/GatoGraphQL/ExtensionStarter/releases/latest/download/gatographql-hello-dolly-{MAJOR.MINOR.PATCH}.zip --force --activate
+    #   wp plugin install https://github.com/EffectPoP/LeoGatoExtensions/releases/latest/download/gatographql-hello-dolly-{MAJOR.MINOR.PATCH}.zip --force --activate
     #
     # (Replace "{MAJOR.MINOR.PATCH}" with the plugin version, eg: "1.10.0")
     #
@@ -30,7 +30,7 @@ else
     # from in GitHub Actions when merging a PR. Download the
     # plugin zip file from the "Summary" entry:
     #
-    # @see https://github.com/GatoGraphQL/ExtensionStarter/actions/workflows/generate_plugins.yml
+    # @see https://github.com/EffectPoP/LeoGatoExtensions/actions/workflows/generate_plugins.yml
     #
     ################################################################
     echo "Please download the latest PROD version of the 'Gato GraphQL - Hello Dolly' plugin from your GitHub repo, and install it on this WordPress site"

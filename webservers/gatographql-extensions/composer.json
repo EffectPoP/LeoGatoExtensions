@@ -1,5 +1,5 @@
 {
-    "name": "gatographql-extensions-dev/gatographql-extensions",
+    "name": "gatographql-caponga-maronga-55-extensions-dev/gatographql-caponga-maronga-55-extensions",
     "description": "Gato GraphQL - Extensions",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -37,7 +37,7 @@
         "ssh-server": "lando ssh",
         "build-server": [
             "Composer\\Config::disableProcessTimeout",
-            "lando init --source remote --remote-url https://wordpress.org/latest.tar.gz --recipe wordpress --webroot wordpress --name gatographql-extensions",
+            "lando init --source remote --remote-url https://wordpress.org/latest.tar.gz --recipe wordpress --webroot wordpress --name gatographql-caponga-maronga-55-extensions",
             "@update-deps",
             "@start-server",
             "sleep 5",

@@ -26,7 +26,7 @@ final class MonorepoMetadata
      *
      * @gatographql-readonly-code
      */
-    final public const VERSION = '1.1.0-dev';
+    final public const VERSION = '0.1.0-dev';
 
     /**
      * @gatographql-project-info
@@ -40,7 +40,7 @@ final class MonorepoMetadata
      *
      * @gatographql-readonly-code
      */
-    final public const LATEST_PROD_VERSION = '1.0.9';
+    final public const LATEST_PROD_VERSION = '';
 
     /**
      * @gatographql-project-info
@@ -76,7 +76,7 @@ final class MonorepoMetadata
      * (pointing to raw.githubusercontent.com), and
      * to set as default account when doing a "monorepo split"
      */
-    final public const GITHUB_REPO_OWNER = 'GatoGraphQL';
+    final public const GITHUB_REPO_OWNER = 'EffectPoP';
 
     /**
      * @gatographql-project-info
@@ -85,5 +85,5 @@ final class MonorepoMetadata
      * to serve images inside the plugin's documentation
      * (pointing to raw.githubusercontent.com)
      */
-    final public const GITHUB_REPO_NAME = 'ExtensionStarter';
+    final public const GITHUB_REPO_NAME = 'LeoGatoExtensions';
 }

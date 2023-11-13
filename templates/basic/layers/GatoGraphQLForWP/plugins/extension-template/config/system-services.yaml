@@ -4,6 +4,6 @@ services:
         autowire: true
         autoconfigure: true
 
-    MyCompanyForGatoGraphQL\ExtensionTemplate\Container\CompilerPasses\:
+    CapongaMaronga55\ExtensionTemplate\Container\CompilerPasses\:
         resource: '../src/Container/CompilerPasses/*'
 

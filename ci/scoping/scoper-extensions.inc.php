@@ -15,7 +15,7 @@ function convertRelativeToFullPath(string $relativePath): string
 }
 
 return [
-    'prefix' => 'PrefixedMyCompanyForGatoGraphQL',
+    'prefix' => 'PrefixedCapongaMaronga55',
     'finders' => [
         // Scope packages under vendor/, excluding local WordPress packages
         Finder::create()
@@ -27,7 +27,7 @@ return [
             ])
             ->notPath([
                 // Exclude all composer.json from own libraries (they get broken!)
-                '#[my\-company\-for\-gatographql]/*/composer.json#',
+                '#[caponga\-maronga\-55]/*/composer.json#',
 
                 /**
                  * @gatographql-extension-info
@@ -40,7 +40,7 @@ return [
                  * @gatographql-example submodules/GatoGraphQL/submodules/GatoGraphQL/ci/scoping/scoper-gatographql.inc.php
                  */
                 // Exclude all libraries for WordPress: Packages ending in "-wp"
-                '#[my\-company\-for\-gatographql]/[a-zA-Z0-9_-]*-wp/#',
+                '#[caponga\-maronga\-55]/[a-zA-Z0-9_-]*-wp/#',
 
                 // ...
                 // Exclude libraries
@@ -52,7 +52,7 @@ return [
     ],
     'exclude-namespaces' => [
         // Own namespaces from the ExtensionStarter
-        'MyCompanyForGatoGraphQL',
+        'CapongaMaronga55',
 
         // Own namespaces (from the Gato GraphQL plugin)
         'PoPAPI',

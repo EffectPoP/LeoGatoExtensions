@@ -69,7 +69,7 @@ class CopyUpstreamMonorepoFoldersDataSource
                 'patternReplacements' => array_merge(
                     $commentOutSetupStepsPatternReplacements,
                     [
-                        '#gatographql.lndo.site#' => 'gatographql-extensions.lndo.site',
+                        '#gatographql.lndo.site#' => 'gatographql-caponga-maronga-55-extensions.lndo.site',
                     ]
                 ),
             ],
@@ -79,7 +79,7 @@ class CopyUpstreamMonorepoFoldersDataSource
                 'patternReplacements' => array_merge(
                     $commentOutSetupStepsPatternReplacements,
                     [
-                        '#gatographql-for-prod.lndo.site#' => 'gatographql-extensions-for-prod.lndo.site',
+                        '#gatographql-for-prod.lndo.site#' => 'gatographql-caponga-maronga-55-extensions-for-prod.lndo.site',
                     ]
                 ),
             ],

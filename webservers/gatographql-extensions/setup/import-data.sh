@@ -7,5 +7,5 @@ if [ -d "$UPLOADS_DIR" ]; then
     rm -rf $UPLOADS_DIR
 fi
 
-wp import /app/assets/gatographql-data.xml --url="gatographql-extensions.lndo.site" --authors=create
-wp import /app/assets/gatographql-testing-data.xml --url="gatographql-extensions.lndo.site" --authors=create
+wp import /app/assets/gatographql-data.xml --url="gatographql-caponga-maronga-55-extensions.lndo.site" --authors=create
+wp import /app/assets/gatographql-testing-data.xml --url="gatographql-caponga-maronga-55-extensions.lndo.site" --authors=create

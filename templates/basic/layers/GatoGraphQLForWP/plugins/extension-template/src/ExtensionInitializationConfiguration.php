@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\ExtensionTemplate;
+namespace CapongaMaronga55\ExtensionTemplate;
 
-use MyCompanyForGatoGraphQL\ExtensionTemplate\ModuleResolvers\SchemaTypeModuleResolver;
+use CapongaMaronga55\ExtensionTemplate\ModuleResolvers\SchemaTypeModuleResolver;
 use GatoGraphQL\GatoGraphQL\PluginSkeleton\AbstractExtensionInitializationConfiguration;
 use PoP\Root\Module\ModuleInterface;
 
@@ -20,7 +20,7 @@ class ExtensionInitializationConfiguration extends AbstractExtensionInitializati
     {
         return [
             SchemaTypeModuleResolver::SCHEMA_EXTENSION_TEMPLATE => [
-                \MyCompanyForGatoGraphQL\ExtensionTemplateSchema\Module::class,
+                \CapongaMaronga55\ExtensionTemplateSchema\Module::class,
             ],
         ];
     }

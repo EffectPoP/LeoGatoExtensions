@@ -4,5 +4,5 @@ services:
         autowire: true
         autoconfigure: true
 
-    MyCompanyForGatoGraphQL\ExtensionTemplate\ModuleResolvers\:
+    CapongaMaronga55\ExtensionTemplate\ModuleResolvers\:
         resource: '../src/ModuleResolvers/*'

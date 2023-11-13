@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\HelloDolly\Integration;
+namespace CapongaMaronga55\HelloDolly\Integration;
 
 use PHPUnitForGatoGraphQL\GatoGraphQL\Integration\AbstractAdminClientQueryExecutionFixtureWebserverRequestTestCase;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\ExtensionTemplate\Integration;
+namespace CapongaMaronga55\ExtensionTemplate\Integration;
 
 use PHPUnitForGatoGraphQL\GatoGraphQL\Integration\AbstractAdminClientQueryExecutionFixtureWebserverRequestTestCase;
 

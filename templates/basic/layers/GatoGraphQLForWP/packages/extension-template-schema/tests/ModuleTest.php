@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\ExtensionTemplateSchema;
+namespace CapongaMaronga55\ExtensionTemplateSchema;
 
 use PoP\ComponentModel\AbstractModuleTestCase;
 

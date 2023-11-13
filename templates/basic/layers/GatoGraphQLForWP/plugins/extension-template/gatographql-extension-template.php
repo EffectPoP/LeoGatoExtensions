@@ -6,14 +6,14 @@ Description: Extension Template extension for Gato GraphQL
 Version: 1.1.0-dev
 Requires at least: 5.4
 Requires PHP: 8.1
-Author: My Company
+Author: Caponga Maronga 55
 License:
 License URI:
 Text Domain: gatographql-extension-template
 Domain Path: /languages
 */
 
-use MyCompanyForGatoGraphQL\ExtensionTemplate\GatoGraphQLExtension;
+use CapongaMaronga55\ExtensionTemplate\GatoGraphQLExtension;
 use GatoGraphQL\GatoGraphQL\Plugin;
 use GatoGraphQL\GatoGraphQL\PluginApp;
 use GatoGraphQL\GatoGraphQL\PluginStaticHelpers;

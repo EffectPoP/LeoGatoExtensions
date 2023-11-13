@@ -7,7 +7,7 @@ Add schema elements for the Extension Template extension for Gato GraphQL.
 Via Composer
 
 ``` bash
-composer require my-company-for-gatographql/extension-template-schema
+composer require caponga-maronga-55/extension-template-schema
 ```
 
 ## PHP versions
@@ -59,4 +59,4 @@ composer test
 
 ## Security
 
-If you discover any security related issues, please email name@mycompany.com instead of using the issue tracker.
+If you discover any security related issues, please email email@mycompany.com instead of using the issue tracker.

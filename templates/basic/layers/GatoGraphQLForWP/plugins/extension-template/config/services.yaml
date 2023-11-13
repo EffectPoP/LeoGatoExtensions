@@ -4,5 +4,5 @@ services:
         autowire: true
         autoconfigure: true
 
-    # MyCompanyForGatoGraphQL\ExtensionTemplate\Hooks\:
+    # CapongaMaronga55\ExtensionTemplate\Hooks\:
     #     resource: '../src/Hooks/*'

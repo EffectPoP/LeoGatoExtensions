@@ -1,12 +1,12 @@
 {
     "name": "gatographql/extension-starter-monorepo",
-    "description": "GitHub template repository to develop and release your extensions for Gato GraphQL.",
-    "homepage": "https://github.com/GatoGraphQL/ExtensionStarter",
+    "description": "Monorepo hosting the Gato GraphQL extensions for Caponga Maronga 55",
+    "homepage": "https://github.com/EffectPoP/LeoGatoExtensions",
     "authors": [
         {
-            "name": "My Company",
-            "email": "name@mycompany.com",
-            "homepage": "https://mycompany.com"
+            "name": "Caponga Maronga 55",
+            "email": "email@mycompany.com",
+            "homepage": "https://www.mycompany.com"
         },
         {
             "name": "Leonardo Losoviz",
@@ -65,8 +65,8 @@
             "GraphQLByPoP\\GraphQLEndpointForWP\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-endpoint-for-wp/src",
             "GraphQLByPoP\\GraphQLRequest\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-request/src",
             "GraphQLByPoP\\GraphQLServer\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-server/src",
-            "MyCompanyForGatoGraphQL\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/src",
-            "MyCompanyForGatoGraphQL\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/src",
+            "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/src",
+            "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/src",
             "PHPUnitForGatoGraphQL\\DummySchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-schema/src",
             "PHPUnitForGatoGraphQL\\DummyWPSchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-wp-schema/src",
             "PHPUnitForGatoGraphQL\\GatoGraphQLTesting\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-plugins/gatographql-testing/src",
@@ -203,8 +203,8 @@
             "GraphQLByPoP\\GraphQLEndpointForWP\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-endpoint-for-wp/tests",
             "GraphQLByPoP\\GraphQLRequest\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-request/tests",
             "GraphQLByPoP\\GraphQLServer\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-server/tests",
-            "MyCompanyForGatoGraphQL\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/tests",
-            "MyCompanyForGatoGraphQL\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/tests",
+            "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/tests",
+            "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/tests",
             "PHPUnitForGatoGraphQL\\DummySchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-schema/tests",
             "PHPUnitForGatoGraphQL\\DummyWPSchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-wp-schema/tests",
             "PHPUnitForGatoGraphQL\\GatoGraphQLTesting\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-plugins/gatographql-testing/tests",
@@ -573,8 +573,8 @@
         "copy-folders-from-upstream-monorepo": "[multi-monorepo] Copy all files in specific folders to be reused across monorepos, from the upstream GatoGraphQL/GatoGraphQL to this downstream repo",
         "copy-files-from-upstream-monorepo": "[multi-monorepo] Copy specific files to be reused across monorepos, from the upstream GatoGraphQL/GatoGraphQL to this downstream repo",
         "copy-upstream-files": "[multi-monorepo] Copy both specific files, and all files in specific folders, to be reused across monorepos, from the upstream GatoGraphQL/GatoGraphQL to this downstream repo",
-        "build-js": "Build all JS packages, blocks and editor scripts for all plugins in the Gato GraphQL - Extension Starter repo",
-        "install-deps-build-js": "Install all dependencies from npm to build the JS packages, blocks and editor scripts for all plugins in the Gato GraphQL - Extension Starter repo"
+        "build-js": "Build all JS packages, blocks and editor scripts for all plugins in the Caponga Maronga 55 - Gato GraphQL Extensions repo",
+        "install-deps-build-js": "Install all dependencies from npm to build the JS packages, blocks and editor scripts for all plugins in the Caponga Maronga 55 - Gato GraphQL Extensions repo"
     },
     "replace": {
         "gatographql/external-dependency-wrappers": "self.version",
@@ -604,8 +604,8 @@
         "graphql-by-pop/graphql-request": "self.version",
         "graphql-by-pop/graphql-server": "self.version",
         "graphql-by-pop/graphql-voyager": "self.version",
-        "my-company-for-gatographql/hello-dolly": "self.version",
-        "my-company-for-gatographql/hello-dolly-schema": "self.version",
+        "caponga-maronga-55/hello-dolly": "self.version",
+        "caponga-maronga-55/hello-dolly-schema": "self.version",
         "phpunit-for-gatographql/dummy-schema": "self.version",
         "phpunit-for-gatographql/dummy-wp-schema": "self.version",
         "phpunit-for-gatographql/gatographql": "self.version",

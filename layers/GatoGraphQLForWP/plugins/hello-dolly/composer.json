@@ -1,19 +1,19 @@
 {
-    "name": "my-company-for-gatographql/hello-dolly",
+    "name": "caponga-maronga-55/hello-dolly",
     "type": "wordpress-plugin",
     "description": "Integration of plugin Hello Dolly with Gato GraphQL",
     "authors": [
         {
-            "name": "My Company",
-            "email": "name@mycompany.com",
-            "homepage": "https://mycompany.com"
+            "name": "Caponga Maronga 55",
+            "email": "email@mycompany.com",
+            "homepage": "https://www.mycompany.com"
         }
     ],
     "keywords": ["WordPress", "plugin", "Gato", "GatoGraphQL", "GraphQL", "Extension", "Starter"],
-    "homepage": "https://github.com/GatoGraphQL/hello-dolly",
+    "homepage": "https://github.com/EffectPoP/hello-dolly",
     "require": {
         "php": "^8.1",
-        "my-company-for-gatographql/hello-dolly-schema": "^1.1"
+        "caponga-maronga-55/hello-dolly-schema": "^1.1"
     },
     "require-dev": {
         "johnpbloch/wordpress": "^6.4",
@@ -33,12 +33,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "MyCompanyForGatoGraphQL\\HelloDolly\\": "src"
+            "CapongaMaronga55\\HelloDolly\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyCompanyForGatoGraphQL\\HelloDolly\\": "tests"
+            "CapongaMaronga55\\HelloDolly\\": "tests"
         }
     },
     "scripts": {

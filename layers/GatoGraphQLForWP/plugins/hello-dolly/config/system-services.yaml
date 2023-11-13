@@ -4,6 +4,6 @@ services:
         autowire: true
         autoconfigure: true
 
-    MyCompanyForGatoGraphQL\HelloDolly\Container\CompilerPasses\:
+    CapongaMaronga55\HelloDolly\Container\CompilerPasses\:
         resource: '../src/Container/CompilerPasses/*'
 

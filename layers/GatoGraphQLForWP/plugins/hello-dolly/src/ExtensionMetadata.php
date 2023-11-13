@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\HelloDolly;
+namespace CapongaMaronga55\HelloDolly;
 
 final class ExtensionMetadata
 {
@@ -27,7 +27,7 @@ final class ExtensionMetadata
      * from which to serve images inside the plugin's documentation
      * (pointing to raw.githubusercontent.com)
      */
-    final public const DOCS_GITHUB_REPO_OWNER = 'GatoGraphQL';
+    final public const DOCS_GITHUB_REPO_OWNER = 'EffectPoP';
 
     /**
      * @gatographql-project-info
@@ -41,5 +41,5 @@ final class ExtensionMetadata
      * to a public repo (under the same path), as to be
      * able to access them by the generated extension.
      */
-    final public const DOCS_GITHUB_REPO_NAME = 'ExtensionStarter';
+    final public const DOCS_GITHUB_REPO_NAME = 'LeoGatoExtensions';
 }

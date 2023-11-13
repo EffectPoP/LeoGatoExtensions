@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\ExtensionTemplate\ModuleResolvers;
+namespace CapongaMaronga55\ExtensionTemplate\ModuleResolvers;
 
-use MyCompanyForGatoGraphQL\ExtensionTemplate\ContentProcessors\ExtensionMarkdownContentRetrieverTrait;
-use MyCompanyForGatoGraphQL\ExtensionTemplate\ExtensionStaticHelpers;
+use CapongaMaronga55\ExtensionTemplate\ContentProcessors\ExtensionMarkdownContentRetrieverTrait;
+use CapongaMaronga55\ExtensionTemplate\ExtensionStaticHelpers;
 use GatoGraphQL\GatoGraphQL\ModuleResolvers\CommonModuleResolverTrait;
 use GatoGraphQL\GatoGraphQL\ModuleResolvers\HasMarkdownDocumentationModuleResolverTrait;
 

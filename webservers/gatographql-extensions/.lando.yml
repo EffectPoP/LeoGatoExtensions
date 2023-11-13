@@ -1,8 +1,8 @@
-name: gatographql-extensions
+name: gatographql-caponga-maronga-55-extensions
 recipe: wordpress
 proxy:
   mailhog:
-    - mail.gatographql-extensions.lndo.site
+    - mail.gatographql-caponga-maronga-55-extensions.lndo.site
 config:
   webroot: wordpress
   php: '8.1'

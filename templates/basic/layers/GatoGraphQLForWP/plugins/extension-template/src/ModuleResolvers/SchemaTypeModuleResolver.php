@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MyCompanyForGatoGraphQL\ExtensionTemplate\ModuleResolvers;
+namespace CapongaMaronga55\ExtensionTemplate\ModuleResolvers;
 
-use MyCompanyForGatoGraphQL\ExtensionTemplate\GatoGraphQLExtension;
+use CapongaMaronga55\ExtensionTemplate\GatoGraphQLExtension;
 use GatoGraphQL\GatoGraphQL\ContentProcessors\MarkdownContentParserInterface;
 use GatoGraphQL\GatoGraphQL\ModuleResolvers\AbstractModuleResolver;
 use GatoGraphQL\GatoGraphQL\ModuleResolvers\SchemaTypeModuleResolverTrait;

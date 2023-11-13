@@ -1,12 +1,12 @@
 {
-    "name": "my-company-for-gatographql/extension-template-schema",
+    "name": "caponga-maronga-55/extension-template-schema",
     "type": "library",
     "description": "Schema for Extension Template extension for Gato GraphQL",
     "authors": [
         {
-            "name": "My Company",
-            "email": "name@mycompany.com",
-            "homepage": "https://mycompany.com"
+            "name": "Caponga Maronga 55",
+            "email": "email@mycompany.com",
+            "homepage": "https://www.mycompany.com"
         }
     ],
     "keywords": ["WordPress", "plugin", "Gato", "GatoGraphQL", "GraphQL", "Extension", "Starter"],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MyCompanyForGatoGraphQL\\ExtensionTemplateSchema\\": "src"
+            "CapongaMaronga55\\ExtensionTemplateSchema\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyCompanyForGatoGraphQL\\ExtensionTemplateSchema\\": "tests"
+            "CapongaMaronga55\\ExtensionTemplateSchema\\": "tests"
         }
     },
     "scripts": {
