@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        public: true
+        autowire: true
+        autoconfigure: true
+
+    CapongaMaronga55\Woocommerce\Container\CompilerPasses\:
+        resource: '../src/Container/CompilerPasses/*'
+

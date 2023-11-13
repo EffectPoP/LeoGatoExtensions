@@ -29,6 +29,17 @@ class PluginDataSource extends UpstreamPluginDataSource
              */
             // { Command Placeholder: Integration plugin Composer package }
 
+            // Gato GraphQL - WooCommerce
+            [
+                'path' => 'layers/GatoGraphQLForWP/plugins/woocommerce',
+                'plugin_slug' => 'gatographql-woocommerce',
+                'main_file' => 'gatographql-woocommerce.php',
+                'rector_downgrade_config' => $this->rootDir . '/config/rector/downgrade/woocommerce/rector.php',
+                'exclude_files' => implode(' ', [
+                    'docs/images/\*',
+                ]),
+            ],
+
             // Gato GraphQL - Hello Dolly
             [
                 'path' => 'layers/GatoGraphQLForWP/plugins/hello-dolly',

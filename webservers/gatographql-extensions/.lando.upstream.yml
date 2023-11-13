@@ -2,6 +2,8 @@ services:
     appserver:
         overrides:
             volumes:
+                - ../../layers/GatoGraphQLForWP/packages/woocommerce-schema:/app/wordpress/wp-content/plugins/gatographql-woocommerce/vendor/caponga-maronga-55/woocommerce-schema
+                - ../../layers/GatoGraphQLForWP/plugins/woocommerce:/app/wordpress/wp-content/plugins/gatographql-woocommerce
                 - ../../layers/GatoGraphQLForWP/packages/again-nathan-bro-schema:/app/wordpress/wp-content/plugins/gatographql-again-nathan-bro/vendor/caponga-maronga-55/again-nathan-bro-schema
                 - ../../layers/GatoGraphQLForWP/plugins/again-nathan-bro:/app/wordpress/wp-content/plugins/gatographql-again-nathan-bro
                 - ../../layers/GatoGraphQLForWP/packages/nathan-bro-schema:/app/wordpress/wp-content/plugins/gatographql-nathan-bro/vendor/caponga-maronga-55/nathan-bro-schema

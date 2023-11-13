@@ -10,3 +10,5 @@ includes:
     - layers/GatoGraphQLForWP/packages/hello-dolly-schema/phpstan.neon.dist
     - layers/GatoGraphQLForWP/plugins/nathan-bro/phpstan.neon.dist
     - layers/GatoGraphQLForWP/packages/nathan-bro-schema/phpstan.neon.dist
+    - layers/GatoGraphQLForWP/plugins/woocommerce/phpstan.neon.dist
+    - layers/GatoGraphQLForWP/packages/woocommerce-schema/phpstan.neon.dist

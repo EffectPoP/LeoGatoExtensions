@@ -1,0 +1,68 @@
+{
+    "name": "caponga-maronga-55/woocommerce",
+    "type": "wordpress-plugin",
+    "description": "WooCommerce extension for Gato GraphQL",
+    "authors": [
+        {
+            "name": "Caponga Maronga 55",
+            "email": "email@mycompany.com",
+            "homepage": "https://www.mycompany.com"
+        }
+    ],
+    "keywords": ["WordPress", "plugin", "Gato", "GatoGraphQL", "GraphQL", "Extension", "Starter"],
+    "homepage": "https://github.com/GatoGraphQL/woocommerce",
+    "require": {
+        "php": "^8.1",
+        "caponga-maronga-55/woocommerce-schema": "^1.1"
+    },
+    "require-dev": {
+        "johnpbloch/wordpress": "^6.4",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^10.2",
+        "rector/rector": "^0.18",
+        "squizlabs/php_codesniffer": "^3.6",
+        "szepeviktor/phpstan-wordpress": "^1.0",
+        "wp-coding-standards/wpcs": "^3.0",
+        "wpackagist-plugin/woocommerce": "^8"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CapongaMaronga55\\Woocommerce\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CapongaMaronga55\\Woocommerce\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests",
+        "phpstan": "phpstan analyse -l 8 src tests"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
+    },
+    "replace": {
+        "pop-schema/schema-commons": "self.version"
+    }
+}

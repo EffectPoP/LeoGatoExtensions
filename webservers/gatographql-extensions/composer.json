@@ -86,7 +86,8 @@
             "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/testing-schema",
             "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/hello-dolly",
             "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/nathan-bro",
-            "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/again-nathan-bro"
+            "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/again-nathan-bro",
+            "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/woocommerce"
         ],
         "deoptimize-autoloader": [
             "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql",
@@ -94,7 +95,8 @@
             "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/testing-schema",
             "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/hello-dolly",
             "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/nathan-bro",
-            "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/again-nathan-bro"
+            "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/again-nathan-bro",
+            "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/woocommerce"
         ],
         "log-server-errors": [
             "Composer\\Config::disableProcessTimeout",
@@ -137,7 +139,8 @@
             "@symlink-vendor-for-gatographql-testing-plugin",
             "@symlink-vendor-for-gatographql-hello-dolly-plugin",
             "@symlink-vendor-for-gatographql-nathan-bro",
-            "@symlink-vendor-for-gatographql-again-nathan-bro"
+            "@symlink-vendor-for-gatographql-again-nathan-bro",
+            "@symlink-vendor-for-gatographql-woocommerce"
         ],
         "symlink-vendor-for-gatographql-plugin": [
             "php -r \"copy('../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql/composer.json', '../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql/composer.local.json');\"",
@@ -168,6 +171,11 @@
             "php -r \"copy('../../layers/GatoGraphQLForWP/plugins/again-nathan-bro/composer.json', '../../layers/GatoGraphQLForWP/plugins/again-nathan-bro/composer.local.json');\"",
             "cd ../../ && vendor/bin/monorepo-builder symlink-local-package --config=config/monorepo-builder/symlink-local-package.php layers/GatoGraphQLForWP/plugins/again-nathan-bro/composer.local.json",
             "COMPOSER=composer.local.json composer update --no-dev --working-dir=../../layers/GatoGraphQLForWP/plugins/again-nathan-bro"
+        ],
+        "symlink-vendor-for-gatographql-woocommerce": [
+            "php -r \"copy('../../layers/GatoGraphQLForWP/plugins/woocommerce/composer.json', '../../layers/GatoGraphQLForWP/plugins/woocommerce/composer.local.json');\"",
+            "cd ../../ && vendor/bin/monorepo-builder symlink-local-package --config=config/monorepo-builder/symlink-local-package.php layers/GatoGraphQLForWP/plugins/woocommerce/composer.local.json",
+            "COMPOSER=composer.local.json composer update --no-dev --working-dir=../../layers/GatoGraphQLForWP/plugins/woocommerce"
         ]
     }
 }

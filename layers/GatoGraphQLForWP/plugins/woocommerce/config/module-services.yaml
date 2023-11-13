@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        public: true
+        autowire: true
+        autoconfigure: true
+
+    CapongaMaronga55\Woocommerce\ModuleResolvers\:
+        resource: '../src/ModuleResolvers/*'

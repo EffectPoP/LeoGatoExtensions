@@ -43,3 +43,17 @@ if wp plugin is-installed gatographql-again-nathan-bro; then
 else
     echo "Please download the latest PROD version of the 'Gato GraphQL - Again Nathan Bro' plugin from your GitHub repo, and install it on this WordPress site"
 fi
+
+# Download and maybe activate external plugins
+if wp plugin is-installed woocommerce; then
+    wp plugin activate woocommerce
+else
+    wp plugin install woocommerce --activate
+fi
+
+# Activate own plugins
+if wp plugin is-installed gatographql-woocommerce; then
+    wp plugin activate gatographql-woocommerce
+else
+    echo "Please download the latest PROD version of the 'Gato GraphQL - WooCommerce' plugin from your GitHub repo, and install it on this WordPress site"
+fi

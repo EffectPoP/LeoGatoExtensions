@@ -1,0 +1,55 @@
+{
+    "name": "caponga-maronga-55/woocommerce-schema",
+    "type": "library",
+    "description": "Schema for WooCommerce extension for Gato GraphQL",
+    "authors": [
+        {
+            "name": "Caponga Maronga 55",
+            "email": "email@mycompany.com",
+            "homepage": "https://www.mycompany.com"
+        }
+    ],
+    "keywords": ["WordPress", "plugin", "Gato", "GatoGraphQL", "GraphQL", "Extension", "Starter"],
+    "homepage": "https://github.com/GatoGraphQL/woocommerce-schema",
+    "require": {
+        "php": "^8.1",
+        "pop-schema/schema-commons": "^1.1"
+    },
+    "require-dev": {
+        "johnpbloch/wordpress": "^6.4",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^10.2",
+        "rector/rector": "^0.18",
+        "squizlabs/php_codesniffer": "^3.6",
+        "szepeviktor/phpstan-wordpress": "^1.0",
+        "wp-coding-standards/wpcs": "^3.0",
+        "wpackagist-plugin/woocommerce": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "CapongaMaronga55\\WoocommerceSchema\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CapongaMaronga55\\WoocommerceSchema\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests",
+        "analyse": "phpstan analyse"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "wordpress-install-dir": "vendor/wordpress/wordpress",
+        "branch-alias": {
+            "dev-main": "1.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
