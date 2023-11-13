@@ -1,0 +1,7 @@
+services:
+    _defaults:
+        public: true
+        autowire: true
+
+    # CapongaMaronga55\NathanBroSchema\FieldResolvers\:
+    #     resource: '../src/FieldResolvers/*'

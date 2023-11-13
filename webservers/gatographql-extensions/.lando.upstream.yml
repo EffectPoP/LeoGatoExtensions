@@ -2,5 +2,7 @@ services:
     appserver:
         overrides:
             volumes:
+                - ../../layers/GatoGraphQLForWP/packages/nathan-bro-schema:/app/wordpress/wp-content/plugins/gatographql-nathan-bro/vendor/caponga-maronga-55/nathan-bro-schema
+                - ../../layers/GatoGraphQLForWP/plugins/nathan-bro:/app/wordpress/wp-content/plugins/gatographql-nathan-bro
                 - ../../layers/GatoGraphQLForWP/plugins/hello-dolly:/app/wordpress/wp-content/plugins/gatographql-hello-dolly
                 - ../../layers/GatoGraphQLForWP/packages/hello-dolly-schema:/app/wordpress/wp-content/plugins/gatographql-hello-dolly/vendor/caponga-maronga-55/hello-dolly-schema

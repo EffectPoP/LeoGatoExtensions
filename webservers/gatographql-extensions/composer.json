@@ -84,13 +84,15 @@
             "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql",
             "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-plugins/gatographql-testing",
             "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/testing-schema",
-            "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/hello-dolly"
+            "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/hello-dolly",
+            "COMPOSER=composer.local.json composer dump-autoload --optimize --working-dir=../../layers/GatoGraphQLForWP/plugins/nathan-bro"
         ],
         "deoptimize-autoloader": [
             "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql",
             "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-plugins/gatographql-testing",
             "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/testing-schema",
-            "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/hello-dolly"
+            "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/hello-dolly",
+            "COMPOSER=composer.local.json composer dump-autoload --working-dir=../../layers/GatoGraphQLForWP/plugins/nathan-bro"
         ],
         "log-server-errors": [
             "Composer\\Config::disableProcessTimeout",
@@ -131,7 +133,8 @@
             "@symlink-vendor-for-gatographql-plugin",
             "@symlink-vendor-for-gatographql-testing-schema-plugin",
             "@symlink-vendor-for-gatographql-testing-plugin",
-            "@symlink-vendor-for-gatographql-hello-dolly-plugin"
+            "@symlink-vendor-for-gatographql-hello-dolly-plugin",
+            "@symlink-vendor-for-gatographql-nathan-bro"
         ],
         "symlink-vendor-for-gatographql-plugin": [
             "php -r \"copy('../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql/composer.json', '../../submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql/composer.local.json');\"",
@@ -152,6 +155,11 @@
             "php -r \"copy('../../layers/GatoGraphQLForWP/plugins/hello-dolly/composer.json', '../../layers/GatoGraphQLForWP/plugins/hello-dolly/composer.local.json');\"",
             "cd ../../ && vendor/bin/monorepo-builder symlink-local-package --config=config/monorepo-builder/symlink-local-package.php layers/GatoGraphQLForWP/plugins/hello-dolly/composer.local.json",
             "COMPOSER=composer.local.json composer update --no-dev --working-dir=../../layers/GatoGraphQLForWP/plugins/hello-dolly"
+        ],
+        "symlink-vendor-for-gatographql-nathan-bro": [
+            "php -r \"copy('../../layers/GatoGraphQLForWP/plugins/nathan-bro/composer.json', '../../layers/GatoGraphQLForWP/plugins/nathan-bro/composer.local.json');\"",
+            "cd ../../ && vendor/bin/monorepo-builder symlink-local-package --config=config/monorepo-builder/symlink-local-package.php layers/GatoGraphQLForWP/plugins/nathan-bro/composer.local.json",
+            "COMPOSER=composer.local.json composer update --no-dev --working-dir=../../layers/GatoGraphQLForWP/plugins/nathan-bro"
         ]
     }
 }

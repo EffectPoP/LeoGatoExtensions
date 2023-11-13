@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        public: true
+        autowire: true
+        autoconfigure: true
+
+    CapongaMaronga55\NathanBro\Container\CompilerPasses\:
+        resource: '../src/Container/CompilerPasses/*'
+

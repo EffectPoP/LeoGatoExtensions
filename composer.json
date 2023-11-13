@@ -57,6 +57,10 @@
     },
     "autoload": {
         "psr-4": {
+            "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/src",
+            "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/src",
+            "CapongaMaronga55\\NathanBroSchema\\": "layers/GatoGraphQLForWP/packages/nathan-bro-schema/src",
+            "CapongaMaronga55\\NathanBro\\": "layers/GatoGraphQLForWP/plugins/nathan-bro/src",
             "GatoGraphQL\\ExternalDependencyWrappers\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/packages/external-dependency-wrappers/src",
             "GatoGraphQL\\GatoGraphQL\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql/src",
             "GatoGraphQL\\PluginUtils\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/packages/plugin-utils/src",
@@ -65,8 +69,6 @@
             "GraphQLByPoP\\GraphQLEndpointForWP\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-endpoint-for-wp/src",
             "GraphQLByPoP\\GraphQLRequest\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-request/src",
             "GraphQLByPoP\\GraphQLServer\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-server/src",
-            "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/src",
-            "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/src",
             "PHPUnitForGatoGraphQL\\DummySchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-schema/src",
             "PHPUnitForGatoGraphQL\\DummyWPSchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-wp-schema/src",
             "PHPUnitForGatoGraphQL\\GatoGraphQLTesting\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-plugins/gatographql-testing/src",
@@ -195,6 +197,10 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/tests",
+            "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/tests",
+            "CapongaMaronga55\\NathanBroSchema\\": "layers/GatoGraphQLForWP/packages/nathan-bro-schema/tests",
+            "CapongaMaronga55\\NathanBro\\": "layers/GatoGraphQLForWP/plugins/nathan-bro/tests",
             "GatoGraphQL\\ExternalDependencyWrappers\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/packages/external-dependency-wrappers/tests",
             "GatoGraphQL\\GatoGraphQL\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/plugins/gatographql/tests",
             "GatoGraphQL\\PluginUtils\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/packages/plugin-utils/tests",
@@ -203,8 +209,6 @@
             "GraphQLByPoP\\GraphQLEndpointForWP\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-endpoint-for-wp/tests",
             "GraphQLByPoP\\GraphQLRequest\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-request/tests",
             "GraphQLByPoP\\GraphQLServer\\": "submodules/GatoGraphQL/layers/GraphQLByPoP/packages/graphql-server/tests",
-            "CapongaMaronga55\\HelloDollySchema\\": "layers/GatoGraphQLForWP/packages/hello-dolly-schema/tests",
-            "CapongaMaronga55\\HelloDolly\\": "layers/GatoGraphQLForWP/plugins/hello-dolly/tests",
             "PHPUnitForGatoGraphQL\\DummySchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-schema/tests",
             "PHPUnitForGatoGraphQL\\DummyWPSchema\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-packages/dummy-wp-schema/tests",
             "PHPUnitForGatoGraphQL\\GatoGraphQLTesting\\": "submodules/GatoGraphQL/layers/GatoGraphQLForWP/phpunit-plugins/gatographql-testing/tests",
@@ -577,6 +581,10 @@
         "install-deps-build-js": "Install all dependencies from npm to build the JS packages, blocks and editor scripts for all plugins in the Caponga Maronga 55 - Gato GraphQL Extensions repo"
     },
     "replace": {
+        "caponga-maronga-55/hello-dolly": "self.version",
+        "caponga-maronga-55/hello-dolly-schema": "self.version",
+        "caponga-maronga-55/nathan-bro": "self.version",
+        "caponga-maronga-55/nathan-bro-schema": "self.version",
         "gatographql/external-dependency-wrappers": "self.version",
         "gatographql/gatographql": "self.version",
         "gatographql/plugin-utils": "self.version",
@@ -604,8 +612,6 @@
         "graphql-by-pop/graphql-request": "self.version",
         "graphql-by-pop/graphql-server": "self.version",
         "graphql-by-pop/graphql-voyager": "self.version",
-        "caponga-maronga-55/hello-dolly": "self.version",
-        "caponga-maronga-55/hello-dolly-schema": "self.version",
         "phpunit-for-gatographql/dummy-schema": "self.version",
         "phpunit-for-gatographql/dummy-wp-schema": "self.version",
         "phpunit-for-gatographql/gatographql": "self.version",
